@@ -84,6 +84,18 @@ Under a strict sensing time budget of 22,000 μs.
 
 ---
 
+## 🔗 Code Access
+
+The full implementation of this work is currently hosted externally.
+
+📂 **Google Drive Repository:**  
+https://drive.google.com/drive/folders/1iSDuGiVmIrKn63gPpXm7lIwqXYvPTQKp?usp=drive_link
+
+⚠️ Note: The code is provided for research purposes.  
+Please contact the authors for collaboration or clarification.
+
+---
+
 ## ▶️ Running the Code
 
 ### Train BNN
