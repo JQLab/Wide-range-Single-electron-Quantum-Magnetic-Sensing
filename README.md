@@ -30,15 +30,25 @@ This work proposes a **two-stage progressive optimization framework**:
 
 ## 📊 Framework
 
-![Framework](figures/fig1.png)
+![Framework](figures/summary.png)
 
-*Figure 1: Two-stage optimization framework combining BNN estimation and federated RL.*
+*Figure 1: Two-stage optimization framework combining BNN estimation and federated reinforcement learning.*
 
 ---
 
 ## 📈 Performance Comparison
 
-![Performance](figures/fig2.png)
+<p align="center">
+  <img src="figures/result1.png" width="32%" />
+  <img src="figures/result2.png" width="32%" />
+  <img src="figures/result3.png" width="32%" />
+</p>
+
+<p align="center">
+  <b>Left:</b> ω ∈ (0,5) MHz &nbsp;&nbsp;
+  <b>Middle:</b> ω ∈ (0,10) MHz &nbsp;&nbsp;
+  <b>Right:</b> ω ∈ (0,20) MHz
+</p>
 
 The proposed method achieves:
 
@@ -97,23 +107,47 @@ https://drive.google.com/drive/folders/1iSDuGiVmIrKn63gPpXm7lIwqXYvPTQKp?usp=dri
 
 ## ▶️ Running the Code
 
-### Train BNN
+### Train Federated RL Agent for the proposed federated reinforcement learning algorithm
 
-```
-python bnn/train.py
-```
-
-### Train Federated RL Agent
-
-```
-python federated_rl/local_train.py
-python federated_rl/fedavg.py
+``` 
+python Quantum Sensing-code\Federated RL-training\Train-RL-Federal\examples\nv_center_dc_phase.py
 ```
 
-### Run Online Inference
+### To compare with the other methods by change folder name: Train-RL -noDiv / Train-RL-pow 
 
 ```
-python simulation/run_protocol.py
+python Quantum Sensing-code\Federated RL-training\folder name\examples\nv_center_dc_phase.py
+```
+
+### To train the multipleM/oneM RL agents by change folder name: Train-RL -IND / Train-RL-noF
+
+```
+python Quantum Sensing-code\Federated RL-training\folder name\examples\nv_center_dc_phase.py
+```
+
+### Bayesian NN estimator
+
+#### To build the training dataset
+```
+python Quantum Sensing-code\Federated RL-training\queso-main\queso\sample\circuit.py
+```
+
+#### To train the BNN
+
+```
+python Quantum Sensing-code\Federated RL-training\queso-main\queso\train\train_nn.py
+```
+
+### Evaluate the proposed federated RL agent and oneM-RL agent
+
+```
+python Quantum Sensing-code\Federated RL-testing\Test-qsensoropt-master - nnRL\examples\nv_center_dc_phase.py
+```
+
+### Evaluate multipleM-RL agent
+
+```
+python Quantum Sensing-code\Federated RL-testing\Test-qsensoropt-master -IND\examples\nv_center_dc_phase.py
 ```
 
 ---
