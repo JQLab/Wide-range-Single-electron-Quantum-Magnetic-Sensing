@@ -30,9 +30,13 @@ This work proposes a **two-stage progressive optimization framework**:
 
 ## 📊 Framework
 
-![Framework](figures/summary.png)
+<p align="center">
+  <img src="figures/summary.png">
+</p>
 
-*Figure 1: Two-stage optimization framework combining BNN estimation and federated reinforcement learning.*
+<p align="center">
+  <em>Two-stage optimization framework combining BNN estimation and federated reinforcement learning</em>
+</p>
 
 ---
 
