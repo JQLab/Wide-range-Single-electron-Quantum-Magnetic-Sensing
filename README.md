@@ -1,4 +1,4 @@
-# Two-Stage Optimization for Wide-Range Quantum Magnetic Sensing
+# A Two-stage Optimization Method for Wide-range Single-electron Quantum Magnetic Sensing
 
 This repository contains the implementation of the paper:
 
